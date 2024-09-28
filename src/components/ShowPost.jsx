@@ -46,7 +46,7 @@ function ShowPost({ pin }) {
         }
       />
       <div className="cards">
-        {filters.length > 0
+        {filters && filters.length > 0
           ? filters.map((item, i) => {
               return (
                 <div key={i} className="card">
